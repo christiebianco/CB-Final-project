@@ -1,0 +1,350 @@
+/* Nav bar - make mobile section */
+body {
+    margin: 0;
+    font-family: gloock;
+}
+
+nav {
+    font-family: gloock;
+    margin: 10px 0px 10px 0px;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-links li:hover {
+}
+
+ul {
+    list-style: none;
+}
+
+/* .navigation-bar{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.left-nav {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-nav ul{
+    display:flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.right-nav li a:hover {
+  text-decoration: underline;
+  padding: 10px;
+} */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li {
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+background-color: rgb(164, 194, 195);
+}
+
+.toggle-button{
+  position:absolute;
+  top: 2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+
+
+.logo {
+    padding: 5px 0  0 0;
+    height: 30%;
+    width: 30%;
+}
+
+#hamburger-icon {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+#hamburger-icon .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+
+
+/* Hero section - add java LAST */
+
+
+
+.hero-image {
+    object-fit: fill;
+    width: 100%;
+    height: 75%;
+    position: relative;
+    filter: brightness(70%);
+}
+
+.mobile-hero {
+    display: none;
+}
+
+.hero-text {
+    text-align: right;
+    font-size: 24px;
+    position: absolute;
+    top: 350px;
+    right: 100px;
+    width: 800px;
+    height: 100px;
+    color: white;
+}
+
+.explore-button {
+    background-color: rgb(164, 194, 195);
+    color: white;
+    font-family: gloock;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border:rgb(164, 194, 195) solid 1px;
+}
+
+.explore-button:hover {
+    background-color: white;
+    color: rgb(164, 194, 195);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+/* section below hero */
+.title {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+ 
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px
+  }
+  
+  .text {
+    position:absolute;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  
+  .places-to-go {
+    object-fit: cover;
+    height: 360px;
+    width: 400px;
+    filter: brightness(50%);
+  }
+
+  .happening {
+    color: white;
+  }
+
+  .events {
+    display: flex;
+    justify-content: center;
+  }
+
+  .event-container {
+    display: flex;
+    gap: 40px;
+    margin: 0 20px 20px 20px;
+  }
+
+  #learn-more {
+    /* display: flex;
+    justify-content: flex-end; */
+    margin-top: 185px;
+  }
+
+  .event-info h2{
+    margin-top: 0;
+  }
+
+  .event-info p{
+    line-height: 1.5;
+  }
+
+  .event-info {
+    padding-right: 45px;
+    position: relative;
+  }
+
+  .event-image {
+    height: 50%;
+    width: 50%;
+  }
+
+
+
+@media (max-width: 768px){
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items:flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction:column;
+    width: 100%;
+  }
+
+  .navbar-links li{
+    text-align: center;
+    padding: 7px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+  
+
+
+    .logo {
+      margin-left: 10px;
+      height: 40%;
+      width: 40%;
+    }
+
+    #search-icon {
+        display: none;
+    }
+
+    .hero-image {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 600px;
+        filter: brightness(70%);
+    }
+    
+    .hero-text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 300px;
+        right: -10px;
+        width: 90%;
+        margin: 30px;
+        font-size: 10px;
+        color: white;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      .title {
+        font-size: 24px;
+        padding: 10px;
+      }
+
+      .event-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .event-image {
+        height: 70%;
+        width: 100%;
+      }
+
+      .event-info {
+        padding-right: 5px;
+      }
+
+      #learn-more {
+        margin-top: 55px;
+      }
+}
+
+
+
+
