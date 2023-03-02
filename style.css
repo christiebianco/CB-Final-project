@@ -7,6 +7,7 @@ body {
 nav {
     font-family: gloock;
     margin: 10px 0px 10px 0px;
+
 }
 
 a { 
@@ -19,39 +20,17 @@ ul {
     list-style: none;
 }
 
-/* .navigation-bar{
-    background-color: white;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 20px;
-    font-size: 14px;
-}
-
-.left-nav {
-    display:flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.right-nav ul{
-    display:flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.right-nav li a:hover {
-  text-decoration: underline;
-  padding: 10px;
-} */
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  margin-bottom: 0px;
+  margin-top:  0;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 
@@ -97,9 +76,11 @@ background-color: rgb(164, 194, 195);
 
 
 .logo {
-    padding: 5px 0  0 0;
-    height: 30%;
-    width: 30%;
+    padding-top: 5px;
+    padding-bottom: 5px;;
+    padding-left: 5px;
+    height: 100%;
+    width: 20%;
 }
 
 #hamburger-icon {
@@ -121,7 +102,20 @@ background-color: rgb(164, 194, 195);
   border-radius: 10px;
 }
 
+.banner {
+  background-color: rgb(164, 194, 195);
+  color: white;
+  text-align: center;
+  margin: 60px;
+  padding: 20px;
+  
+}
 
+.side-by-side {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
 
 /* Hero section - add java LAST */
 
@@ -158,9 +152,17 @@ background-color: rgb(164, 194, 195);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     border:rgb(164, 194, 195) solid 1px;
+}
+
+.explore-button a{
+  color: white;
+}
+
+.explore-button a:hover {
+  color: rgb(164, 194, 195) solid 1px;
+  text-decoration: underline;
 }
 
 .explore-button:hover {
@@ -170,12 +172,87 @@ background-color: rgb(164, 194, 195);
     transition: 0.3s;
 }
 
+#learn-more {
+  position: aboslute;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: black;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid white;
+  width: 80%;
+  text-align: left;
+}
+
+.modal-content p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+   margin-bottom: 30px;
+}
+.modal-content h2{
+  margin-bottom: 0;
+}
+
+.close {
+  color: rgb(164, 194, 195)
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  color: black;
+}
+
+#enter-here {
+  margin-bottom: 20px;
+  padding-right: 50px;
+}
+
+#submit-button {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-family: gloock;
+  padding: 10px 15px;
+}
+
+#submit-button:hover {
+  border: 1 px solid black;
+  background-color: white;
+  color: black
+}
+
 /* section below hero */
 .title {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    letter-spacing: 3px;
 }
  
 .flex-container {
@@ -191,9 +268,10 @@ background-color: rgb(164, 194, 195);
     justify-content: space-evenly;
     flex-direction: column;
     padding: 10px
+    position: relative;
   }
   
-  .text {
+  .text-places {
     position:absolute;
     color: white;
     font-size: 20px;
@@ -211,6 +289,10 @@ background-color: rgb(164, 194, 195);
   .happening {
     color: white;
   }
+  .happening:hover {
+    text-decoration: underline;
+  }
+
 
   .events {
     display: flex;
@@ -221,12 +303,6 @@ background-color: rgb(164, 194, 195);
     display: flex;
     gap: 40px;
     margin: 0 20px 20px 20px;
-  }
-
-  #learn-more {
-    /* display: flex;
-    justify-content: flex-end; */
-    margin-top: 185px;
   }
 
   .event-info h2{
@@ -246,6 +322,133 @@ background-color: rgb(164, 194, 195);
     height: 50%;
     width: 50%;
   }
+
+  #bob-t-image {
+    object-fit: contain;
+ 
+  }
+
+
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 10px;
+  }
+
+  /* footer */
+  .footer p {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .web-links {
+    height: 50%;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
+  /* Slideshow styles  */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.artist-description {
+  padding: 0 10px 0 10px;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* owl slider */
+.home-demo .item {
+  background: #ff3f4d;
+}
+.home-demo h2 {
+  color: #FFF;
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+}
+
+
+
 
 
 
@@ -282,8 +485,7 @@ background-color: rgb(164, 194, 195);
 
 
     .logo {
-      margin-left: 10px;
-      height: 40%;
+      height: 100%;
       width: 40%;
     }
 
@@ -317,6 +519,7 @@ background-color: rgb(164, 194, 195);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        gap: 30px;
       }
 
       .title {
