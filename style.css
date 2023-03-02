@@ -1,7 +1,12 @@
-/* Nav bar - make mobile section */
+
+html {
+  overflow-x: hidden;
+}
+
 body {
     margin: 0;
-    font-family: gloock;
+    font-family: gloock, Georgia, serif;
+    /* overflow: hidden; */
 }
 
 nav {
@@ -20,6 +25,7 @@ ul {
     list-style: none;
 }
 
+/* Nav bar */
 
 .navbar {
   display: flex;
@@ -281,8 +287,8 @@ input {
   
   .places-to-go {
     object-fit: cover;
-    height: 360px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     filter: brightness(50%);
   }
 
@@ -443,6 +449,7 @@ input {
 
 
 @media (max-width: 768px){
+
 
   .toggle-button {
     display: flex;
