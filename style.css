@@ -1,17 +1,12 @@
 
-html {
-  overflow-x: hidden;
-}
-
 body {
     margin: 0;
-    font-family: gloock, Georgia, serif;
-    /* overflow: hidden; */
+    font-family: gloock, Georgia bold, serif;
 }
 
 nav {
-    font-family: gloock;
-    margin: 10px 0px 10px 0px;
+  font-family: gloock, Georgia bold, serif;
+  margin: 10px 0px 10px 0px;
 
 }
 
@@ -108,24 +103,12 @@ background-color: rgb(164, 194, 195);
   border-radius: 10px;
 }
 
-.banner {
-  background-color: rgb(164, 194, 195);
-  color: white;
-  text-align: center;
-  margin: 60px;
-  padding: 20px;
-  
-}
 
-.side-by-side {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-}
 
 /* Hero section - add java LAST */
 
-
+.hero-section {
+}
 
 .hero-image {
     object-fit: fill;
@@ -153,7 +136,7 @@ background-color: rgb(164, 194, 195);
 .explore-button {
     background-color: rgb(164, 194, 195);
     color: white;
-    font-family: gloock;
+    font-family: gloock, Georgia bold, serif;
     border: none;
     padding: 15px 32px;
     text-align: center;
@@ -242,7 +225,7 @@ input {
   border: 1px solid white;
   background-color: black;
   color: white;
-  font-family: gloock;
+  font-family: gloock, Georgia bold, serif;
   padding: 10px 15px;
 }
 
@@ -372,12 +355,10 @@ input {
   margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -393,18 +374,15 @@ input {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -440,7 +418,22 @@ input {
   margin-top: 0;
 }
 
-/* owl slider */
+/* testimonials */
+
+.banner {
+  background-color: rgb(164, 194, 195);
+  color: white;
+  text-align: center;
+  margin: 60px;
+  padding: 20px;
+  
+}
+
+.side-by-side {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
 
 
 
@@ -488,6 +481,11 @@ input {
 
     #search-icon {
         display: none;
+    }
+
+    .slideshow-container {
+      overflow-x: hidden;
+
     }
 
     .hero-image {
@@ -540,6 +538,15 @@ input {
 
       #learn-more {
         margin-top: 55px;
+      }
+
+      .banner {
+        background-color: rgb(164, 194, 195);
+        color: white;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        
       }
 }
 
