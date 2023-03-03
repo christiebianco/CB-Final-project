@@ -152,17 +152,24 @@ background-color: rgb(164, 194, 195);
 .explore-button a:hover {
   color: rgb(164, 194, 195) solid 1px;
   text-decoration: underline;
+  transition: 0.3s;
 }
 
 .explore-button:hover {
     background-color: white;
     color: rgb(164, 194, 195);
     text-decoration: underline;
-    transition: 0.3s;
+ 
 }
 
-#learn-more {
-  position: aboslute;
+
+
+#learn-more a{ 
+  color: white;
+}
+
+#learn-more a:hover {
+  color: rgb(164, 194, 195);
 }
 
 /* The Modal (background) */
@@ -353,6 +360,7 @@ input {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  width: 97%;
 }
 
 .mySlides {
